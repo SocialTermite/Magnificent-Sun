@@ -1,0 +1,17 @@
+Carthage/Build/tvOS
+Carthage/Build/Mac
+Carthage/Build/watchOS
+Carthage/Checkouts
+
+*.app.dSYM.zip
+*.ipa
+fastlane/report.xml
+fastlane/test_output
+fastlane/README.md
+*.bcsymbolmap
+
+xcuserdata
+.DS_Store
+Gemfile.lock
+build
+Package.resolved
