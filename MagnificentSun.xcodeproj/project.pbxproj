@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,41 @@
 		E8830BDC2454505B00E49192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8830BDA2454505B00E49192 /* Main.storyboard */; };
 		E8830BDE2454505F00E49192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8830BDD2454505F00E49192 /* Assets.xcassets */; };
 		E8830BE12454505F00E49192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8830BDF2454505F00E49192 /* LaunchScreen.storyboard */; };
+		E8830BEA245450A400E49192 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830BE9245450A400E49192 /* ImageType.swift */; };
+		E8830BEC245450BE00E49192 /* WaveLenght.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830BEB245450BE00E49192 /* WaveLenght.swift */; };
+		E8830BEE2454513600E49192 /* SunImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830BED2454513600E49192 /* SunImage.swift */; };
+		E8830C012454563200E49192 /* SunTodayApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C002454563200E49192 /* SunTodayApiTests.swift */; };
+		E8830C07245456EA00E49192 /* l_094_335_193.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8830C03245456EA00E49192 /* l_094_335_193.jpg */; };
+		E8830C08245456EA00E49192 /* f_094_335_193.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8830C04245456EA00E49192 /* f_094_335_193.jpg */; };
+		E8830C09245456EA00E49192 /* f_094_335_193pfss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8830C05245456EA00E49192 /* f_094_335_193pfss.jpg */; };
+		E8830C0A245456EA00E49192 /* f_094_335_193pfssnolines.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8830C06245456EA00E49192 /* f_094_335_193pfssnolines.jpg */; };
+		E8830C0C2454578600E49192 /* SunTodayNameCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C0B2454578600E49192 /* SunTodayNameCreatorTests.swift */; };
+		E8830C0E2454597F00E49192 /* t_094_335_193.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8830C0D2454597F00E49192 /* t_094_335_193.jpg */; };
+		E8830C102454623900E49192 /* SunTodayNameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C0F2454623900E49192 /* SunTodayNameCreator.swift */; };
+		E8830C122454691000E49192 /* SunTodayDateCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C112454691000E49192 /* SunTodayDateCreatorTests.swift */; };
+		E8830C1424546B2100E49192 /* SunTodayDateCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C1324546B2100E49192 /* SunTodayDateCreator.swift */; };
+		E8830C1624546CD600E49192 /* SunTodayURLCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C1524546CD600E49192 /* SunTodayURLCreator.swift */; };
+		E8830C182454717900E49192 /* SunTodayURLCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8830C172454717900E49192 /* SunTodayURLCreatorTests.swift */; };
+		E8E17A4D24549B5A005709C1 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A4C24549B5A005709C1 /* SwiftDate */; };
+		E8E17A5124549F4C005709C1 /* SunTodayApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17A5024549F4C005709C1 /* SunTodayApi.swift */; };
+		E8E17A6B2454A05E005709C1 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A6A2454A05E005709C1 /* RxAlamofire */; };
+		E8E17A6D2454A05E005709C1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A6C2454A05E005709C1 /* RxBlocking */; };
+		E8E17A6F2454A05E005709C1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A6E2454A05E005709C1 /* RxCocoa */; };
+		E8E17A712454A05E005709C1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A702454A05E005709C1 /* RxRelay */; };
+		E8E17A732454A05E005709C1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A722454A05E005709C1 /* RxSwift */; };
+		E8E17A772454A368005709C1 /* FilesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17A762454A368005709C1 /* FilesProvider.swift */; };
+		E8E17A792454A6F4005709C1 /* FilesProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8830BFB245455ED00E49192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8830BC92454505B00E49192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8830BD02454505B00E49192;
+			remoteInfo = MagnificentSun;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E8830BD12454505B00E49192 /* MagnificentSun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnificentSun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +58,43 @@
 		E8830BDD2454505F00E49192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8830BE02454505F00E49192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8830BE22454505F00E49192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8830BE9245450A400E49192 /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
+		E8830BEB245450BE00E49192 /* WaveLenght.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveLenght.swift; sourceTree = "<group>"; };
+		E8830BED2454513600E49192 /* SunImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunImage.swift; sourceTree = "<group>"; };
+		E8830BF6245455ED00E49192 /* MagnificentSunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnificentSunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8830BFA245455ED00E49192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8830C002454563200E49192 /* SunTodayApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayApiTests.swift; sourceTree = "<group>"; };
+		E8830C03245456EA00E49192 /* l_094_335_193.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = l_094_335_193.jpg; sourceTree = "<group>"; };
+		E8830C04245456EA00E49192 /* f_094_335_193.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f_094_335_193.jpg; sourceTree = "<group>"; };
+		E8830C05245456EA00E49192 /* f_094_335_193pfss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f_094_335_193pfss.jpg; sourceTree = "<group>"; };
+		E8830C06245456EA00E49192 /* f_094_335_193pfssnolines.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f_094_335_193pfssnolines.jpg; sourceTree = "<group>"; };
+		E8830C0B2454578600E49192 /* SunTodayNameCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayNameCreatorTests.swift; sourceTree = "<group>"; };
+		E8830C0D2454597F00E49192 /* t_094_335_193.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t_094_335_193.jpg; sourceTree = "<group>"; };
+		E8830C0F2454623900E49192 /* SunTodayNameCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayNameCreator.swift; sourceTree = "<group>"; };
+		E8830C112454691000E49192 /* SunTodayDateCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayDateCreatorTests.swift; sourceTree = "<group>"; };
+		E8830C1324546B2100E49192 /* SunTodayDateCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayDateCreator.swift; sourceTree = "<group>"; };
+		E8830C1524546CD600E49192 /* SunTodayURLCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayURLCreator.swift; sourceTree = "<group>"; };
+		E8830C172454717900E49192 /* SunTodayURLCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayURLCreatorTests.swift; sourceTree = "<group>"; };
+		E8E17A5024549F4C005709C1 /* SunTodayApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayApi.swift; sourceTree = "<group>"; };
+		E8E17A762454A368005709C1 /* FilesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesProvider.swift; sourceTree = "<group>"; };
+		E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E8830BCE2454505B00E49192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E17A732454A05E005709C1 /* RxSwift in Frameworks */,
+				E8E17A712454A05E005709C1 /* RxRelay in Frameworks */,
+				E8E17A4D24549B5A005709C1 /* SwiftDate in Frameworks */,
+				E8E17A6D2454A05E005709C1 /* RxBlocking in Frameworks */,
+				E8E17A6F2454A05E005709C1 /* RxCocoa in Frameworks */,
+				E8E17A6B2454A05E005709C1 /* RxAlamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8830BF3245455ED00E49192 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				E8830BD32454505B00E49192 /* MagnificentSun */,
+				E8830BF7245455ED00E49192 /* MagnificentSunTests */,
 				E8830BD22454505B00E49192 /* Products */,
+				E8E17A4524549B35005709C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E8830BD12454505B00E49192 /* MagnificentSun.app */,
+				E8830BF6245455ED00E49192 /* MagnificentSunTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +126,7 @@
 		E8830BD32454505B00E49192 /* MagnificentSun */ = {
 			isa = PBXGroup;
 			children = (
+				E8830BE82454508E00E49192 /* Core */,
 				E8830BD42454505B00E49192 /* AppDelegate.swift */,
 				E8830BD62454505B00E49192 /* SceneDelegate.swift */,
 				E8830BD82454505B00E49192 /* ViewController.swift */,
@@ -65,6 +136,54 @@
 				E8830BE22454505F00E49192 /* Info.plist */,
 			);
 			path = MagnificentSun;
+			sourceTree = "<group>";
+		};
+		E8830BE82454508E00E49192 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E8830BE9245450A400E49192 /* ImageType.swift */,
+				E8830BEB245450BE00E49192 /* WaveLenght.swift */,
+				E8830BED2454513600E49192 /* SunImage.swift */,
+				E8830C0F2454623900E49192 /* SunTodayNameCreator.swift */,
+				E8830C1324546B2100E49192 /* SunTodayDateCreator.swift */,
+				E8830C1524546CD600E49192 /* SunTodayURLCreator.swift */,
+				E8E17A5024549F4C005709C1 /* SunTodayApi.swift */,
+				E8E17A762454A368005709C1 /* FilesProvider.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8830BF7245455ED00E49192 /* MagnificentSunTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8830C02245456EA00E49192 /* TestResources */,
+				E8830BFA245455ED00E49192 /* Info.plist */,
+				E8830C002454563200E49192 /* SunTodayApiTests.swift */,
+				E8830C0B2454578600E49192 /* SunTodayNameCreatorTests.swift */,
+				E8830C112454691000E49192 /* SunTodayDateCreatorTests.swift */,
+				E8830C172454717900E49192 /* SunTodayURLCreatorTests.swift */,
+				E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */,
+			);
+			path = MagnificentSunTests;
+			sourceTree = "<group>";
+		};
+		E8830C02245456EA00E49192 /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				E8830C0D2454597F00E49192 /* t_094_335_193.jpg */,
+				E8830C03245456EA00E49192 /* l_094_335_193.jpg */,
+				E8830C04245456EA00E49192 /* f_094_335_193.jpg */,
+				E8830C05245456EA00E49192 /* f_094_335_193pfss.jpg */,
+				E8830C06245456EA00E49192 /* f_094_335_193pfssnolines.jpg */,
+			);
+			path = TestResources;
+			sourceTree = "<group>";
+		};
+		E8E17A4524549B35005709C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +202,37 @@
 			dependencies = (
 			);
 			name = MagnificentSun;
+			packageProductDependencies = (
+				E8E17A4C24549B5A005709C1 /* SwiftDate */,
+				E8E17A6A2454A05E005709C1 /* RxAlamofire */,
+				E8E17A6C2454A05E005709C1 /* RxBlocking */,
+				E8E17A6E2454A05E005709C1 /* RxCocoa */,
+				E8E17A702454A05E005709C1 /* RxRelay */,
+				E8E17A722454A05E005709C1 /* RxSwift */,
+			);
 			productName = MagnificentSun;
 			productReference = E8830BD12454505B00E49192 /* MagnificentSun.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E8830BF5245455ED00E49192 /* MagnificentSunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8830BFD245455ED00E49192 /* Build configuration list for PBXNativeTarget "MagnificentSunTests" */;
+			buildPhases = (
+				E8830BF2245455ED00E49192 /* Sources */,
+				E8830BF3245455ED00E49192 /* Frameworks */,
+				E8830BF4245455ED00E49192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8830BFC245455ED00E49192 /* PBXTargetDependency */,
+			);
+			name = MagnificentSunTests;
+			packageProductDependencies = (
+			);
+			productName = MagnificentSunTests;
+			productReference = E8830BF6245455ED00E49192 /* MagnificentSunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +247,10 @@
 					E8830BD02454505B00E49192 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					E8830BF5245455ED00E49192 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = E8830BD02454505B00E49192;
+					};
 				};
 			};
 			buildConfigurationList = E8830BCC2454505B00E49192 /* Build configuration list for PBXProject "MagnificentSun" */;
@@ -111,11 +262,17 @@
 				Base,
 			);
 			mainGroup = E8830BC82454505B00E49192;
+			packageReferences = (
+				E8E17A3424549876005709C1 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				E8E17A37245498A9005709C1 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E8830BD22454505B00E49192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E8830BD02454505B00E49192 /* MagnificentSun */,
+				E8830BF5245455ED00E49192 /* MagnificentSunTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +288,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8830BF4245455ED00E49192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8830C09245456EA00E49192 /* f_094_335_193pfss.jpg in Resources */,
+				E8830C0E2454597F00E49192 /* t_094_335_193.jpg in Resources */,
+				E8830C08245456EA00E49192 /* f_094_335_193.jpg in Resources */,
+				E8830C07245456EA00E49192 /* l_094_335_193.jpg in Resources */,
+				E8830C0A245456EA00E49192 /* f_094_335_193pfssnolines.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +308,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8830BD92454505B00E49192 /* ViewController.swift in Sources */,
+				E8E17A5124549F4C005709C1 /* SunTodayApi.swift in Sources */,
+				E8830C1424546B2100E49192 /* SunTodayDateCreator.swift in Sources */,
+				E8830C1624546CD600E49192 /* SunTodayURLCreator.swift in Sources */,
+				E8830C102454623900E49192 /* SunTodayNameCreator.swift in Sources */,
 				E8830BD52454505B00E49192 /* AppDelegate.swift in Sources */,
 				E8830BD72454505B00E49192 /* SceneDelegate.swift in Sources */,
+				E8E17A772454A368005709C1 /* FilesProvider.swift in Sources */,
+				E8830BEA245450A400E49192 /* ImageType.swift in Sources */,
+				E8830BEE2454513600E49192 /* SunImage.swift in Sources */,
+				E8830BEC245450BE00E49192 /* WaveLenght.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8830BF2245455ED00E49192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E17A792454A6F4005709C1 /* FilesProviderTests.swift in Sources */,
+				E8830C0C2454578600E49192 /* SunTodayNameCreatorTests.swift in Sources */,
+				E8830C122454691000E49192 /* SunTodayDateCreatorTests.swift in Sources */,
+				E8830C012454563200E49192 /* SunTodayApiTests.swift in Sources */,
+				E8830C182454717900E49192 /* SunTodayURLCreatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8830BFC245455ED00E49192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8830BD02454505B00E49192 /* MagnificentSun */;
+			targetProxy = E8830BFB245455ED00E49192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E8830BDA2454505B00E49192 /* Main.storyboard */ = {
@@ -169,6 +366,7 @@
 		E8830BE32454505F00E49192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -199,6 +397,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -229,6 +428,7 @@
 		E8830BE42454505F00E49192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -259,6 +459,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -316,6 +517,46 @@
 			};
 			name = Release;
 		};
+		E8830BFE245455ED00E49192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N323V8M9LM;
+				INFOPLIST_FILE = MagnificentSunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SocialTermite.MagnificentSunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnificentSun.app/MagnificentSun";
+			};
+			name = Debug;
+		};
+		E8830BFF245455ED00E49192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N323V8M9LM;
+				INFOPLIST_FILE = MagnificentSunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SocialTermite.MagnificentSunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnificentSun.app/MagnificentSun";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,7 +578,76 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E8830BFD245455ED00E49192 /* Build configuration list for PBXNativeTarget "MagnificentSunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8830BFE245455ED00E49192 /* Debug */,
+				E8830BFF245455ED00E49192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8E17A3424549876005709C1 /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E8E17A37245498A9005709C1 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8E17A4C24549B5A005709C1 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A37245498A9005709C1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		E8E17A6A2454A05E005709C1 /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A3424549876005709C1 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		E8E17A6C2454A05E005709C1 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		E8E17A6E2454A05E005709C1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E8E17A702454A05E005709C1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E8E17A722454A05E005709C1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E17A3A24549977005709C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8830BC92454505B00E49192 /* Project object */;
 }
