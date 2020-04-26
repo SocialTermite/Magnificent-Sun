@@ -9,7 +9,7 @@
 import Foundation
 
 struct SunImage {
-    let uuid: UUID
+    let uuid: UUID = UUID()
     var type: ImageType
     var wave: WaveLenght
     var date: Date

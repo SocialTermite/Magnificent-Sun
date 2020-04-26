@@ -37,6 +37,11 @@
 		E8E17A732454A05E005709C1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E8E17A722454A05E005709C1 /* RxSwift */; };
 		E8E17A772454A368005709C1 /* FilesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17A762454A368005709C1 /* FilesProvider.swift */; };
 		E8E17A792454A6F4005709C1 /* FilesProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */; };
+		E8FE9694245592A8008367B3 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE9693245592A8008367B3 /* ImageProvider.swift */; };
+		E8FE9696245593F6008367B3 /* ImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE9695245593F6008367B3 /* ImageProviderTests.swift */; };
+		E8FE96982455958B008367B3 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE96972455958B008367B3 /* TestUtils.swift */; };
+		E8FE969A24559F75008367B3 /* MSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE969924559F75008367B3 /* MSError.swift */; };
+		E8FE969C2455A443008367B3 /* MSTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE969B2455A443008367B3 /* MSTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		E8E17A5024549F4C005709C1 /* SunTodayApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTodayApi.swift; sourceTree = "<group>"; };
 		E8E17A762454A368005709C1 /* FilesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesProvider.swift; sourceTree = "<group>"; };
 		E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesProviderTests.swift; sourceTree = "<group>"; };
+		E8FE9693245592A8008367B3 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		E8FE9695245593F6008367B3 /* ImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderTests.swift; sourceTree = "<group>"; };
+		E8FE96972455958B008367B3 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		E8FE969924559F75008367B3 /* MSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSError.swift; sourceTree = "<group>"; };
+		E8FE969B2455A443008367B3 /* MSTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,8 @@
 				E8830C1524546CD600E49192 /* SunTodayURLCreator.swift */,
 				E8E17A5024549F4C005709C1 /* SunTodayApi.swift */,
 				E8E17A762454A368005709C1 /* FilesProvider.swift */,
+				E8FE9693245592A8008367B3 /* ImageProvider.swift */,
+				E8FE969924559F75008367B3 /* MSError.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -163,6 +175,9 @@
 				E8830C112454691000E49192 /* SunTodayDateCreatorTests.swift */,
 				E8830C172454717900E49192 /* SunTodayURLCreatorTests.swift */,
 				E8E17A782454A6F4005709C1 /* FilesProviderTests.swift */,
+				E8FE9695245593F6008367B3 /* ImageProviderTests.swift */,
+				E8FE96972455958B008367B3 /* TestUtils.swift */,
+				E8FE969B2455A443008367B3 /* MSTestCase.swift */,
 			);
 			path = MagnificentSunTests;
 			sourceTree = "<group>";
@@ -315,6 +330,8 @@
 				E8830BD52454505B00E49192 /* AppDelegate.swift in Sources */,
 				E8830BD72454505B00E49192 /* SceneDelegate.swift in Sources */,
 				E8E17A772454A368005709C1 /* FilesProvider.swift in Sources */,
+				E8FE969A24559F75008367B3 /* MSError.swift in Sources */,
+				E8FE9694245592A8008367B3 /* ImageProvider.swift in Sources */,
 				E8830BEA245450A400E49192 /* ImageType.swift in Sources */,
 				E8830BEE2454513600E49192 /* SunImage.swift in Sources */,
 				E8830BEC245450BE00E49192 /* WaveLenght.swift in Sources */,
@@ -327,9 +344,12 @@
 			files = (
 				E8E17A792454A6F4005709C1 /* FilesProviderTests.swift in Sources */,
 				E8830C0C2454578600E49192 /* SunTodayNameCreatorTests.swift in Sources */,
+				E8FE9696245593F6008367B3 /* ImageProviderTests.swift in Sources */,
 				E8830C122454691000E49192 /* SunTodayDateCreatorTests.swift in Sources */,
+				E8FE96982455958B008367B3 /* TestUtils.swift in Sources */,
 				E8830C012454563200E49192 /* SunTodayApiTests.swift in Sources */,
 				E8830C182454717900E49192 /* SunTodayURLCreatorTests.swift in Sources */,
+				E8FE969C2455A443008367B3 /* MSTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

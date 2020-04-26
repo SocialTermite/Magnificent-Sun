@@ -10,54 +10,34 @@ import XCTest
 import SwiftDate
 @testable import MagnificentSun
 
-class FilesProviderTests: XCTestCase {
-    private let imagesDir = "FilesProviderTests"
-    
-    override func setUp() {
-        FilesProvider.imageDir = imagesDir
-        provider.clearImages()
-    }
-    
+class FilesProviderTests: MSTestCase {
     private let provider = FilesProvider()
     
     func testStoringImage() {
-        let appDirPath = try! FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(imagesDir)
-        let date = Date(year: 2020, month: 01, day: 01, hour: 0, minute: 0)
-        var sunImage = SunImage(uuid: UUID(), type: .s_4096, wave: .l_304, date: date, imageData: nil)
+        var sunImage = utils.createTestSunImage()
         
-        let datePath = SunTodayDateCreator.urlPath(for: date)
-        
-        XCTAssertFalse(FilesProvider.isDirectoryExist(for: appDirPath.appendingPathComponent(datePath).path))
-        
-        let testBundle = Bundle(for: type(of: self))
-        let filePath = testBundle.path(forResource: "f_094_335_193", ofType: "jpg")
-        let data = try! Data(contentsOf: URL(fileURLWithPath: filePath!))
-        
-        sunImage.imageData = data
+        XCTAssertFalse(utils.isDirectoryExist(for: sunImage))
+
+        sunImage.imageData = utils.loadTestImageData(named: "f_094_335_193")
         
         _ = try! provider.store(sunImage).toBlocking(timeout: 1).first()
-        XCTAssertTrue(FilesProvider.isDirectoryExist(for: appDirPath.appendingPathComponent(datePath).path))
         
-        XCTAssertTrue(FileManager.default.fileExists(atPath: appDirPath.appendingPathComponent(datePath).appendingPathComponent(sunImage.fileName).path))
+        XCTAssertTrue(utils.isDirectoryExist(for: sunImage))
+        
+        XCTAssertTrue(utils.isFileExist(for: sunImage))
     }
     
     func testRequestingImage() {
-        let appDirPath = try! FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(imagesDir)
-        let date = Date(year: 2020, month: 01, day: 01, hour: 0, minute: 0)
-        var sunImage = SunImage(uuid: UUID(), type: .s_4096, wave: .l_304, date: date, imageData: nil)
-        
-        let datePath = SunTodayDateCreator.urlPath(for: date)
-        
-        XCTAssertFalse(FilesProvider.isDirectoryExist(for: appDirPath.appendingPathComponent(datePath).path))
-        
-        let testBundle = Bundle(for: type(of: self))
-        let filePath = testBundle.path(forResource: "f_094_335_193", ofType: "jpg")
-        let data = try! Data(contentsOf: URL(fileURLWithPath: filePath!))
-        
+         var sunImage = utils.createTestSunImage()
+               
+        XCTAssertFalse(utils.isDirectoryExist(for: sunImage))
+
+        let data = utils.loadTestImageData(named: "f_094_335_193")
         sunImage.imageData = data
         
         _ = try! provider.store(sunImage).toBlocking().first()
-        XCTAssertTrue(FilesProvider.isDirectoryExist(for: appDirPath.appendingPathComponent(datePath).path))
+        
+        XCTAssertTrue(utils.isDirectoryExist(for: sunImage))
         
         let image = try! provider.requestImage(for: sunImage).toBlocking(timeout: 1).first()
         
